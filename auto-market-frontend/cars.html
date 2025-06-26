@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMarket - Cars</title>
+  <link href="assest/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assest/css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AutoMarket</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Available Cars</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card car-card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Car 4" />
+          <div class="card-body">
+            <h5 class="card-title">Toyota Corolla</h5>
+            <p class="card-text">Price: $18,000</p>
+            <button class="btn btn-primary" onclick="showDetails('Toyota Corolla')">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card car-card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Car 5" />
+          <div class="card-body">
+            <h5 class="card-title">Honda Civic</h5>
+            <p class="card-text">Price: $20,000</p>
+            <button class="btn btn-primary" onclick="showDetails('Honda Civic')">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card car-card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Car 6" />
+          <div class="card-body">
+            <h5 class="card-title">Hyundai Elantra</h5>
+            <p class="card-text">Price: $19,000</p>
+            <button class="btn btn-primary" onclick="showDetails('Hyundai Elantra')">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card car-card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Car 7" />
+          <div class="card-body">
+            <h5 class="card-title">Ford Focus</h5>
+            <p class="card-text">Price: $17,500</p>
+            <button class="btn btn-primary" onclick="showDetails('Ford Focus')">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 AutoMarket. All rights reserved.</p>
+  </footer>
+
+  <script src="assest/js/bootstrap.bundle.min.js"></script>
+  <script src="assest/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoMarket - Home</title>
+  <link href="assest/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assest/css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AUTOMARKET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="cars.html">CARS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-transition">
+  <div class="hero-bg"></div>
+  <header class="hero-header text-white text-center py-5">
+    <h1 class="display-4">Welcome to AutoMarket</h1>
+    <p class="lead">Find your perfect ride with us</p>
+  </header>
+</div>
+
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Featured Cars</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+          <a href="330i.html" class="text-decoration-none text-dark">
+        <div class="card car-card h-100">
+          <img src="assest/images/330i.jpg" class="card-img-top img-fixed" alt="Car 1" />
+          <div class="card-body">
+            <h5 class="card-title">BMW 330i</h5>
+            <p class="card-text">Price: $55,000</p>
+          </div>
+        </div>
+          </a>
+      </div>
+      <div class="col-md-4">
+  <a href="RS5.html" class="text-decoration-none text-dark">
+    <div class="card car-card h-100">
+      <img src="assest/images/2022-Audi-RS5-Pritchard-2.JPG" class="card-img-top img-fixed" alt="Car 2" />
+      <div class="card-body">
+        <h5 class="card-title">Audi RS5</h5>
+        <p class="card-text">Price: $67,000</p>
+      </div>
+    </div>
+  </a>
+</div>
+      <div class="col-md-4">
+          <a href="m3.html" class="text-decoration-none text-dark">
+        <div class="card car-card h-100">
+          <img src="assest/images/m3.jpg" class="card-img-top img-fixed" alt="Car 3" />
+          <div class="card-body">
+            <h5 class="card-title">BMW G80 M3</h5>
+            <p class="card-text">Price: $80,000</p>
+          </div>
+        </div>
+          </a>
+      </div>
+    </div>
+  </section>
+<!-- About Us Section -->
+<section class="container my-5" id="about">
+  <h2 class="text-center mb-4">About Us</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>
+        At <strong>AutoMarket</strong>, we’re passionate about connecting drivers with the perfect car. Whether you’re looking
+        for a reliable commuter, a powerful performance machine, or a luxurious ride, our curated selection of vehicles offers
+        something for every lifestyle and budget.
+      </p>
+      <p>
+        Our team is made up of car enthusiasts and professionals who care about quality, service, and honesty. We’re not just
+        here to sell cars — we’re here to build lasting relationships with our customers.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="assest/images/show-room.jpg" alt="Showroom" class="img-fluid rounded shadow" />
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="container my-5" id="services">
+  <h2 class="text-center mb-4">What We Offer</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="p-3 border rounded h-100">
+        <h5>Certified Cars</h5>
+        <p>All cars go through a rigorous inspection and come with verified histories.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 border rounded h-100">
+        <h5>Flexible Financing</h5>
+        <p>Affordable plans, low interest, and help from our in-house finance team.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 border rounded h-100">
+        <h5>Nationwide Delivery</h5>
+        <p>We deliver your car directly to your door — wherever you are in Libya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form id="contactForm" class="mx-auto" style="max-width: 600px">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Send Message</button>
+    </form>
+  </section>
+
+<!-- Testimonials Section -->
+<section class="container my-5" id="testimonials">
+  <h2 class="text-center mb-4">What Our Customers Say</h2>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <blockquote class="blockquote p-3 bg-light rounded shadow">
+        <p>“The car was exactly as described, and the whole process was smooth. I highly recommend AutoMarket.”</p>
+        <footer class="blockquote-footer">Alaa, Tripoli</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-6 mb-4">
+      <blockquote class="blockquote p-3 bg-light rounded shadow">
+        <p>“Great staff, great cars, and great prices. I’ll definitely be back for my next car!”</p>
+        <footer class="blockquote-footer">Nour, Benghazi</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+  <script src="assest/js/bootstrap.bundle.min.js"></script>
+  <script src="assest/js/script.js"></script>
+</body>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 AutoMarket. All rights reserved.</p>
+  </footer>
+</html>

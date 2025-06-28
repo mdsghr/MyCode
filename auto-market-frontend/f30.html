@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Details - AutoMarket</title>
+  <link href="assest/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assest/css/style.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AUTOMARKET</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">CARS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Car Details Section -->
+  <section class="container my-5">
+    <h2 class="mb-3">BMW F30 335i 2015</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="main-image" src="assest/images/f30.jpg" class="img-fluid mb-3 rounded" alt="Main Car Image" onclick="openFullscreenImage(this.src)" style="cursor: zoom-in;" />
+        <div class="d-flex gap-2">
+          <img src="assest/images/f30.jpg" class="img-thumbnail" style="width: 100px; cursor: pointer" onclick="changeMainImage(this.src)" />
+          <img src="assest/images/f302.jpg" class="img-thumbnail" style="width: 100px; cursor: pointer" onclick="changeMainImage(this.src)" />
+          <img src="assest/images/f303.jpg" class="img-thumbnail" style="width: 100px; cursor: pointer" onclick="changeMainImage(this.src)" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4 class="mb-3">Specifications:</h4>
+        <ul>
+          <li>Engine: 3.0L Twin-Turbo Inline 6</li>
+          <li>Horsepower: 340 HP</li>
+          <li>Transmission: 8 Speed DCT</li>
+          <li>Drive: Rear-Wheel Drive</li>
+        </ul>
+        <p class="lead mt-4">Price: <strong>$23,000</strong></p>
+        <a href="purchase.html" class="btn btn-success btn-lg">Purchase</a>
+      </div>
+    </div>
+  </section>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0 text-center">
+        <img id="modalImage" class="img-fluid" alt="Full Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="assest/js/bootstrap.bundle.min.js"></script>
+  <script src="assest/js/script.js"></script>
+</body>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 AutoMarket. All rights reserved.</p>
+  </footer>
+</html>
